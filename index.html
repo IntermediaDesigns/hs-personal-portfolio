@@ -20,10 +20,10 @@
     <link rel="icon" type="image/png" href="./assets/ljimenez.png" />
     <link rel="apple-touch-icon" href="./assets/ljimenez.png" />
     <link rel="manifest" href="./manifest.json" />
-    <meta name="msapplication-TileColor" content="#36d1dc" />
+    <meta name="msapplication-TileColor" content="#6edcf1" />
     <meta name="msapplication-TileImage" content="./assets/ljimenez.png" />
     <meta name="msapplication-config" content="./browserconfig.xml" />
-    <meta name="theme-color" content="#36d1dc" />
+    <meta name="theme-color" content="#6edcf1" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="https://lynjaijimenez.dev/" />
@@ -96,7 +96,8 @@
   <body>
     <!-- Hero Section -->
     <div id="hero">
-      <section class="container">
+      <section class="container" id="hero-container">
+        <div>
         <h1 class="hero-title">
           Hi, my name is <span class="text-color-main name">Lynjai Jimenez</span>
           <br />
@@ -105,6 +106,14 @@
         <p class="hero-cta">
           <a class="cta-btn cta-btn--hero" href="#contact">Get in touch</a>
         </p>
+      </div>
+          <img
+            src="./assets/ljimenez.png"
+            alt="Hero Image"
+            class="hero-image"
+            width="400"
+            height="auto"
+          />
       </section>
       <a href="#about" class="scroll-down-link" aria-label="scroll-down">
         <div class="scroll-down"></div>
@@ -122,25 +131,37 @@
               class="img-fluid"
               src="./assets/me.png"
               alt="Profile Image"
-              width="450"
-              height="350"
+              width="400"
+              height="auto"
             />
           </div>
           <div class="about-wrapper__info">
             <p class="about-wrapper__info-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus quae repellat, ad omnis distinctio velit saepe expedita
-              architecto cumque veritatis adipisci. Sapiente non, saepe hic
-              adipisci doloribus quisquam recusandae et.
+              Hello! I'm Lynjai Jimenez, a Full Stack Web Developer based in the United States. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. Currently attending college to finish my Bachelors in Business Administration with a minor in Web and Digital Design. I'm a passionate learner who's always interested in expanding my horizons. I'm currently diving deep into the world of programming, learning various languages to broaden my skill set and understanding. I've been spending my time developing projects, which allows me to apply what I've learned in a practical way.
             </p>
-            <p class="about-wrapper__info-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-              obcaecati doloribus qui praesentium quae veniam esse mollitia
-              consequuntur nisi minima quasi et fugit quidem enim recusandae
-              delectus, iusto culpa rerum?
+            <p>
+              Here are a few technologies I've been working with recently:
+              <ul class="info-text">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>Next js</li>
+                <li>React</li>
+                <li>Tailwind</li>
+                <li>Bootstrap</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>HTMX</li>
+                <li>APIs</li>
+                <li>Prisma</li>
+                <li>PostgreSQL</li>
+              </ul>
             </p>
             <span class="about-wrapper__cta">
-              <a href="#" class="cta-btn cta-btn--resume">View Resume</a>
+              <a href="https://www.linkedin.com/in/lynjai-jimenez/" class="cta-btn cta-btn--resume">View Resume</a>
             </span>
           </div>
         </div>
@@ -157,36 +178,32 @@
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
+              <h3 class="project-wrapper__text-title">Pet Taskmaster</h3>
               <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
+                I collaborated with 2 teammates on a full-stack web application crafted with React, CSS, JavaScript, and Next.js for the frontend, and Prisma for streamlined query and API handling. This comprehensive platform offers users a seamless experience, featuring robust authentication functionalities for registration, login, and logout. Pet Taskmasters is a user friendly task management game application that allows the users to purchase pokemon using earned coins, raise a pokemon to evolve its stage, complete tasks, create tasks, and earn coins for completing bonus tasks. The project showcases our proficiency in fullstack development and the utilization of cutting-edge technologies for a dynamic and user-centric web application.
               </p>
               <div class="project-wrapper__text-btns">
                 <a
-                  href="#"
+                  href="https://pettaskmaster.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="cta-btn cta-btn--hero cta-btn--projects"
                   >See Live</a
                 >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
+                <a href="https://github.com/IntermediaDesigns/capstone-next" target="_blank" class="cta-btn text-color-main"
                   >Source Code</a
                 >
               </div>
             </div>
 
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
+            <div class="project-wrapper__image" >
+              <a href="https://pettaskmaster.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <div>
                   <img
-                    src="./assets/project.png"
+                    src="./assets/pettaskmaster.png"
                     class="img-fluid"
                     alt="Project Image"
-                    width="1366"
-                    height="767"
+                    id="screenshot"
                   />
                 </div>
               </a>
@@ -197,36 +214,32 @@
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
+              <h3 class="project-wrapper__text-title">Reddit Clone</h3>
               <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
+                I developed a sophisticated full-stack web application crafted with React and Next.js for the frontend, and Prisma for streamlined query handling. This comprehensive platform offers users a seamless experience, featuring robust authentication functionalities for registration, login, and logout. The message board aspect enables users to post, edit, delete, and upvote messages, fostering an interactive community environment. Leveraging folder-based routing on the frontend ensures code organization and maintainability. Moreover, the application supports threaded discussions through a well-implemented commenting system, facilitating engaging conversations around posted messages. The project showcases my proficiency in fullstack development and the utilization of cutting-edge technologies for a dynamic and user-centric web application.
               </p>
               <div class="project-wrapper__text-btns">
                 <a
-                  href="#"
+                  href="https://redditclonehmh.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="cta-btn cta-btn--hero cta-btn--projects"
                   >See Live</a
                 >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
+                <a href="https://github.com/IntermediaDesigns/reddit-clone" target="_blank" class="cta-btn text-color-main"
                   >Source Code</a
                 >
               </div>
             </div>
 
             <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
+              <a href="https://redditclonehmh.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <div>
                   <img
-                    src="./assets/project.png"
+                    src="./assets/reddit.png"
                     class="img-fluid"
                     alt="Project Image"
-                    width="1366"
-                    height="767"
+                    id="screenshot"
                   />
                 </div>
               </a>
@@ -237,36 +250,68 @@
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
+              <h3 class="project-wrapper__text-title">Diary Journal</h3>
               <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
+                Developed an interactive and responsive Diary Application that provides users with a personalized journaling experience. The application allows users to select any day of the month, across any year, to add, edit, or delete diary entries. This project showcases my ability to create user-centric applications with intuitive navigation and responsive design. It also highlights my proficiency in managing and manipulating data structures, such as unordered lists, to enhance user experience.
               </p>
               <div class="project-wrapper__text-btns">
                 <a
-                  href="#"
+                  href="https://diaryhmh.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="cta-btn cta-btn--hero cta-btn--projects"
                   >See Live</a
                 >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
+                <a href="https://github.com/IntermediaDesigns/HmH-Diary-Project" target="_blank" class="cta-btn text-color-main"
                   >Source Code</a
                 >
               </div>
             </div>
 
             <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
+              <a href="https://diaryhmh.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <div>
                   <img
-                    src="./assets/project.png"
+                    src="./assets/diary.png"
                     class="img-fluid"
                     alt="Project Image"
-                    width="1366"
-                    height="767"
+                    id="screenshot"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Spammer</h3>
+              <p class="project-wrapper__text-info">
+                Spammer is a comprehensive messaging application that provides users with a platform to post, edit, like, and comment on messages. The application is designed with a focus on user interaction and data management.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://spammerproject.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="https://github.com/IntermediaDesigns/spammer-backend" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="https://spammerproject.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <img
+                    src="./assets/spammer.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    id="screenshot"
                   />
                 </div>
               </a>
@@ -283,8 +328,8 @@
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a href="#" class="cta-btn cta-btn--resume">Call to Action</a>
+          <p class="contact-wrapper__text">Interested in collaborating or want to learn more about my work? Don’t hesitate to reach out. I’m always open to discussing new projects, creative ideas, or opportunities to add value to your team. I look forward to hearing from you!</p>
+          <a href="mailto:intermediadesignsllc@gmail.com" class="cta-btn cta-btn--resume">Email Me</a>
         </div>
       </div>
     </section>
@@ -298,7 +343,7 @@
         </a>
         <div class="social-links">
           <a
-            href="#!"
+            href="https://x.com/imdesignsllc"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="twitter"
@@ -306,7 +351,7 @@
             <i class="fa-brands fa-twitter"></i>
           </a>
           <a
-            href="#!"
+            href="https://www.instagram.com/intermedia_designs/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="instagram"
@@ -314,15 +359,15 @@
             <i class="fa-brands fa-instagram"></i>
           </a>
           <a
-            href="#!"
+            href="https://linktr.ee/LynjaiJimenez"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="codepen"
+            aria-label="linktr.ee"
           >
-            <i class="fa-brands fa-codepen"></i>
+            <img id="linktree" src="./assets/linktree.png" alt="linktree">
           </a>
           <a
-            href="#!"
+            href="https://www.linkedin.com/in/lynjai-jimenez/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="linkedin"
@@ -330,7 +375,7 @@
             <i class="fa-brands fa-linkedin"></i>
           </a>
           <a
-            href="#!"
+            href="https://github.com/IntermediaDesigns"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="github"
@@ -340,13 +385,7 @@
         </div>
         <hr />
         <p class="footer__text">
-          &copy; <span id="year"></span> - Template by
-          <a
-            href="https://github.com/AnilSeervi"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Anil Seervi</a
-          >. <br />Made with &hearts;
+          &copy; <span id="year"></span> - Lynjai Jimenez | Full Stack Web Developer
         </p>
       </div>
     </footer>

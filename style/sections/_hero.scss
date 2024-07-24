@@ -28,6 +28,8 @@
     padding: 0rem $default-font-size;
   }
 
+
+
   .hero-title {
     font-size: 5.6rem;
     font-weight: 700;
@@ -70,6 +72,20 @@
     }
   }
 }
+
+
+
+  @include respond(tab-land) {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+  @include respond(tab-port) {
+    margin-top: 0;
+  }
+  @include respond(phone) {
+    margin-top: 0;
+  }
+
 .scroll-down-link {
   position: absolute;
   left: 50%;
